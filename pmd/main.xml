@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2022-12-03T18:41:12.309">
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\Document.java">
+<violation beginline="13" endline="13" begincolumn="13" endcolumn="29" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="14" endline="14" begincolumn="13" endcolumn="32" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="39" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="23" endline="23" begincolumn="19" endcolumn="44" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="31" endline="31" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="31" endline="31" begincolumn="21" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="34" begincolumn="17" endcolumn="39" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="35" endline="35" begincolumn="19" endcolumn="44" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="44" endline="44" begincolumn="31" endcolumn="50" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="44" endline="44" begincolumn="52" endcolumn="52" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like c
+</violation>
+<violation beginline="44" endline="44" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="44" endline="44" begincolumn="31" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'c' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="21" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="17" endcolumn="39" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="58" endline="58" begincolumn="31" endcolumn="47" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="58" endline="58" begincolumn="52" endcolumn="71" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="58" endline="58" begincolumn="73" endcolumn="73" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like c
+</violation>
+<violation beginline="58" endline="58" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="58" endline="58" begincolumn="49" endcolumn="49" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="w" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like w
+</violation>
+<violation beginline="58" endline="58" begincolumn="52" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'c' is not assigned and could be declared final
+</violation>
+<violation beginline="58" endline="58" begincolumn="21" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="58" endline="58" begincolumn="31" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="Document" variable="w" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'w' is not assigned and could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="12" endcolumn="28" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="getWords" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="90" endline="90" begincolumn="12" endcolumn="31" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="getClasses" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="100" endline="100" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="setName" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="100" endline="100" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="setName" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="26" endcolumn="42" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="setWords" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="110" endline="110" begincolumn="44" endcolumn="44" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="setWords" variable="w" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like w
+</violation>
+<violation beginline="110" endline="110" begincolumn="26" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="setWords" variable="w" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'w' is not assigned and could be declared final
+</violation>
+<violation beginline="120" endline="120" begincolumn="28" endcolumn="47" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="setClasses" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="120" endline="120" begincolumn="49" endcolumn="49" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="setClasses" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like c
+</violation>
+<violation beginline="120" endline="120" begincolumn="28" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="setClasses" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'c' is not assigned and could be declared final
+</violation>
+<violation beginline="130" endline="130" begincolumn="36" endcolumn="36" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="addClass" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like c
+</violation>
+<violation beginline="130" endline="130" begincolumn="26" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="addClass" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'c' is not assigned and could be declared final
+</violation>
+<violation beginline="140" endline="140" begincolumn="39" endcolumn="39" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="removeClass" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like c
+</violation>
+<violation beginline="140" endline="140" begincolumn="29" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="removeClass" variable="c" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'c' is not assigned and could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="17" endcolumn="40" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Document" method="removeClass" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="157" endline="160" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'hashCode()' is missing an @Override annotation.
+</violation>
+<violation beginline="167" endline="170" begincolumn="12" endcolumn="5" rule="ProperCloneImplementation" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Document" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#propercloneimplementation" priority="2">
+Object clone() should be implemented with super.clone()
+</violation>
+<violation beginline="167" endline="170" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'clone()' is missing an @Override annotation.
+</violation>
+<violation beginline="167" endline="170" begincolumn="12" endcolumn="5" rule="CloneMethodMustImplementCloneable" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Document" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonemethodmustimplementcloneable" priority="3">
+clone() method should be implemented only if implementing Cloneable interface
+</violation>
+<violation beginline="167" endline="170" begincolumn="12" endcolumn="5" rule="CloneThrowsCloneNotSupportedException" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Document" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonethrowsclonenotsupportedexception" priority="3">
+clone() method should throw CloneNotSupportedException
+</violation>
+<violation beginline="177" endline="177" begincolumn="27" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="equals" variable="other" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="177" endline="189" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'equals(Object)' is missing an @Override annotation.
+</violation>
+<violation beginline="181" endline="181" begincolumn="13" endcolumn="25" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="184" endline="184" begincolumn="9" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'rhs' could be declared final
+</violation>
+<violation beginline="196" endline="205" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'toString()' is missing an @Override annotation.
+</violation>
+<violation beginline="198" endline="198" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Document" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'buf' could be declared final
+</violation>
+<violation beginline="199" endline="199" begincolumn="9" endcolumn="25" rule="ConsecutiveAppendsShouldReuse" ruleset="Performance" package="edu.odu.cs.cs350.pne" class="Document" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#consecutiveappendsshouldreuse" priority="3">
+StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+</violation>
+<violation beginline="200" endline="200" begincolumn="9" endcolumn="33" rule="ConsecutiveAppendsShouldReuse" ruleset="Performance" package="edu.odu.cs.cs350.pne" class="Document" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#consecutiveappendsshouldreuse" priority="3">
+StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+</violation>
+<violation beginline="201" endline="201" begincolumn="9" endcolumn="28" rule="ConsecutiveAppendsShouldReuse" ruleset="Performance" package="edu.odu.cs.cs350.pne" class="Document" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#consecutiveappendsshouldreuse" priority="3">
+StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+</violation>
+<violation beginline="202" endline="202" begincolumn="20" endcolumn="22" rule="AppendCharacterWithChar" ruleset="Performance" package="edu.odu.cs.cs350.pne" class="Document" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#appendcharacterwithchar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+<violation beginline="212" endline="215" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Document" method="iterator" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'iterator()' is missing an @Override annotation.
+</violation>
+</file>
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\DocumentReader.java">
+<violation beginline="16" endline="108" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+The utility class name 'DocumentReader' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
+</violation>
+<violation beginline="17" endline="108" begincolumn="1" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350.pne" class="DocumentReader" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="28" endline="28" begincolumn="39" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="isValid" variable="fileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'fileName' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="80" endcolumn="92" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="isValid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="33" endline="33" begincolumn="39" endcolumn="51" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="isValid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="33" endline="33" begincolumn="23" endcolumn="31" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="isValid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="46" endline="46" begincolumn="40" endcolumn="53" rule="UseVarargs" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="areValid" variable="files" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#usevarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="46" endline="46" begincolumn="40" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="areValid" variable="files" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'files' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="areValid" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="43" endcolumn="55" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="areValid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="68" endline="68" begincolumn="23" endcolumn="39" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="68" endline="68" begincolumn="53" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="fileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'fileName' is not assigned and could be declared final
+</violation>
+<violation beginline="71" endline="71" begincolumn="17" endcolumn="67" rule="PrematureDeclaration" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="71" endline="71" begincolumn="45" endcolumn="67" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="71" endline="92" begincolumn="35" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="rawText" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'rawText' (lines '71'-'92').
+</violation>
+<violation beginline="71" endline="71" begincolumn="17" endcolumn="67" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'rawText' could be declared final
+</violation>
+<violation beginline="73" endline="73" begincolumn="25" endcolumn="28" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="scan" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this Scanner object are closed after use
+</violation>
+<violation beginline="74" endline="92" begincolumn="23" endcolumn="60" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="scan" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'scan' (lines '74'-'92').
+</violation>
+<violation beginline="75" endline="75" begincolumn="39" endcolumn="50" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="75" endline="75" begincolumn="23" endcolumn="31" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="79" endline="79" begincolumn="25" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'line' could be declared final
+</violation>
+<violation beginline="81" endline="81" begincolumn="25" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'words' could be declared final
+</violation>
+<violation beginline="81" endline="81" begincolumn="42" endcolumn="57" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="83" endline="83" begincolumn="29" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="giveRawText" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="102" endline="102" begincolumn="45" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="readDocument" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="17" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="DocumentReader" method="readDocument" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
+</violation>
+</file>
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\Librarian.java">
+<violation beginline="3" endline="13" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Librarian" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\Main.java">
+<violation beginline="8" endline="54" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Main
+</violation>
+<violation beginline="9" endline="54" begincolumn="1" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="19" endline="19" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="27" begincolumn="74" endcolumn="84" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="valid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'valid' (lines '24'-'27').
+</violation>
+<violation beginline="25" endline="25" begincolumn="21" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'arg' could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="74" endcolumn="84" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="valid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'valid' (lines '27'-'27').
+</violation>
+<violation beginline="27" endline="27" begincolumn="33" endcolumn="50" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="30" endline="30" begincolumn="29" endcolumn="46" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="31" endline="31" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="37" endline="39" begincolumn="25" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="docs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'docs' (lines '37'-'39').
+</violation>
+<violation beginline="39" endline="39" begincolumn="25" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="docs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'docs' (lines '39'-'39').
+</violation>
+<violation beginline="39" endline="39" begincolumn="35" endcolumn="70" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="42" endline="53" begincolumn="26" endcolumn="79" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="list" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'list' (lines '42'-'53').
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="79" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="21" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Main" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\Parser.java">
+<violation beginline="13" endline="78" begincolumn="21" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="13" endline="78" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+The utility class name 'Parser' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
+</violation>
+<violation beginline="19" endline="25" begincolumn="23" endcolumn="9" rule="LinguisticNaming" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="toLowerCase" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#linguisticnaming" priority="3">
+Linguistics Antipattern - The transform method 'toLowerCase' should not return void linguistically
+</violation>
+<violation beginline="19" endline="19" begincolumn="40" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="toLowerCase" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'doc' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="17" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="toLowerCase" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'words' could be declared final
+</violation>
+<violation beginline="23" endline="23" begincolumn="25" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="toLowerCase" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="23" endline="23" begincolumn="38" endcolumn="63" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="toLowerCase" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="23" endline="23" begincolumn="38" endcolumn="63" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Parser" method="toLowerCase" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="32" endline="32" begincolumn="46" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'doc' is not assigned and could be declared final
+</violation>
+<violation beginline="33" endline="33" begincolumn="17" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'words' could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="55" endcolumn="55" rule="AvoidReassigningParameters" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" variable="s" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
+Avoid reassigning parameters such as 's'
+</violation>
+<violation beginline="45" endline="45" begincolumn="55" endcolumn="55" rule="AvoidReassigningParameters" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" variable="s" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
+Avoid reassigning parameters such as 's'
+</violation>
+<violation beginline="45" endline="45" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" variable="s" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="45" endline="55" begincolumn="23" endcolumn="9" rule="CyclomaticComplexity" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'removePunctuation(String)' has a cyclomatic complexity of 11.
+</violation>
+<violation beginline="46" endline="46" begincolumn="43" endcolumn="59" rule="SimplifyStartsWith" ruleset="Performance" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#simplifystartswith" priority="3">
+This call to String.startsWith can be rewritten using String.charAt(0)
+</violation>
+<violation beginline="49" endline="49" begincolumn="23" endcolumn="37" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="49" endline="49" begincolumn="40" endcolumn="54" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="49" endline="49" begincolumn="57" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="49" endline="49" begincolumn="74" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="49" endline="49" begincolumn="91" endcolumn="106" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="49" endline="49" begincolumn="109" endcolumn="123" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="50" endline="50" begincolumn="23" endcolumn="37" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="50" endline="50" begincolumn="40" endcolumn="54" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.pne" class="Parser" method="removePunctuation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="62" endline="62" begincolumn="42" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="pruneStopList" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'doc' is not assigned and could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="56" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="pruneStopList" variable="stop" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'stop' is not assigned and could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="17" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Parser" method="pruneStopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'words' could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="33" endcolumn="33" rule="AvoidReassigningLoopVariables" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="Parser" method="pruneStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningloopvariables" priority="3">
+Avoid reassigning the loop control variable 'n'
+</violation>
+<violation beginline="68" endline="65" begincolumn="44" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="Parser" method="pruneStopList" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'n' (lines '68'-'65').
+</violation>
+</file>
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\StopList.java">
+<violation beginline="18" endline="18" begincolumn="17" endcolumn="31" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'HashSet'; use the interface instead
+</violation>
+<violation beginline="18" endline="18" begincolumn="44" endcolumn="64" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="18" endline="18" begincolumn="33" endcolumn="40" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" variable="stopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="17" endcolumn="65" rule="AvoidFieldNameMatchingTypeName" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidfieldnamematchingtypename" priority="3">
+It is somewhat confusing to have a field name matching the declaring class name
+</violation>
+<violation beginline="18" endline="18" begincolumn="33" endcolumn="40" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350.pne" class="StopList" variable="stopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'stopList' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="fileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'fileName' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="25" endcolumn="28" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="scan" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this Scanner object are closed after use
+</violation>
+<violation beginline="31" endline="31" begincolumn="23" endcolumn="31" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="31" endline="31" begincolumn="49" endcolumn="64" rule="AvoidThrowingRawExceptionTypes" ruleset="Design" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidthrowingrawexceptiontypes" priority="1">
+Avoid throwing raw exception types.
+</violation>
+<violation beginline="31" endline="31" begincolumn="39" endcolumn="102" rule="PreserveStackTrace" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#preservestacktrace" priority="3">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="36" endline="36" begincolumn="25" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'line' could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="25" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'split' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="29" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="62" endcolumn="76" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="52" endline="52" begincolumn="25" endcolumn="39" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'HashSet'; use the interface instead
+</violation>
+<violation beginline="52" endline="52" begincolumn="25" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="stop" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'stop' is not assigned and could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="53" endcolumn="67" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="63" endline="63" begincolumn="16" endcolumn="30" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="StopList" method="getStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'HashSet'; use the interface instead
+</violation>
+<violation beginline="73" endline="73" begincolumn="33" endcolumn="47" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.pne" class="StopList" method="setStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'HashSet'; use the interface instead
+</violation>
+<violation beginline="73" endline="73" begincolumn="49" endcolumn="50" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="setStoplist" variable="sl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like sl
+</violation>
+<violation beginline="73" endline="73" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="setStoplist" variable="sl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sl' is not assigned and could be declared final
+</violation>
+<violation beginline="77" endline="77" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="setStoplist" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="77" endline="77" begincolumn="51" endcolumn="65" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="setStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="86" endline="86" begincolumn="35" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="addToStopList" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'word' is not assigned and could be declared final
+</violation>
+<violation beginline="88" endline="88" begincolumn="30" endcolumn="47" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="addToStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="96" endline="96" begincolumn="40" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="removeFromStopList" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'word' is not assigned and could be declared final
+</violation>
+<violation beginline="98" endline="98" begincolumn="33" endcolumn="50" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="removeFromStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="109" endline="109" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="109" endline="109" begincolumn="50" endcolumn="51" rule="UseStringBufferForStringAppends" ruleset="Performance" package="edu.odu.cs.cs350.pne" class="StopList" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#usestringbufferforstringappends" priority="3">
+Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+</violation>
+<violation beginline="119" endline="119" begincolumn="33" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="StopList" method="contains" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'word' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="42" endcolumn="59" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.pne" class="StopList" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+</file>
+<file name="C:\Users\Kayla\Desktop\Schools\ODU\2022-2023\2022 Fall\CS350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\pne\Trainer.java">
+<violation beginline="3" endline="12" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350.pne" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>
