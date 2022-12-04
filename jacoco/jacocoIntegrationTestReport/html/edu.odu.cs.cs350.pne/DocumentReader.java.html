@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DocumentReader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Main</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350.pne</a> &gt; <span class="el_source">DocumentReader.java</span></div><h1>DocumentReader.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350.pne;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ * This is supposed to read each document by passing it's path and check the
+ * file's formatting.
+ *
+ *
+ * @author Team 7
+ *
+ */
+<span class="nc" id="L15">public class DocumentReader</span>
+{
+	/**
+	 * Taking in the parameter fileName to make sure the fileName has .pdf or .txt
+	 * by trying to load the file.
+	 *
+	 * @param fileName - a single file name
+	 *
+	 * @try loading the file to see if the fileName does not end in .txt or .pdf
+	 * @catch returning an exception and false if the file in not valid
+	 * @return true if the file is valid
+	 */
+	public static boolean isValid(String fileName) //make sure file input is txt or pdf
+	{ 
+<span class="nc bnc" id="L29" title="All 4 branches missed.">		if(!fileName.endsWith(&quot;.txt&quot;) &amp;&amp; !fileName.endsWith(&quot;.pdf&quot;)) { return false; } //return false if it doesn't end in correct extension</span>
+		
+<span class="nc" id="L31">		try { new File(fileName); }           //try loading the file</span>
+<span class="nc" id="L32">		catch(Exception ex) { return false; } //if file is not valid, return false</span>
+		
+<span class="nc" id="L34">		return true; //otherwise, return true</span>
+	}
+
+	/**
+	 * Will check if all files are valid and end with .pdf or .txt
+	 *
+	 * @param files - ArrayList of multiple files
+	 *
+	 * @return if the end of the file is not a .pdf or .txt return false, else
+	 * return true
+	 */
+	public static boolean areValid(String[] files) //make sure all inputted files are valid
+	{ 
+		
+<span class="nc bnc" id="L48" title="All 2 branches missed.">		for(String s : files) //loop through all strings</span>
+		{ 
+<span class="nc bnc" id="L50" title="All 2 branches missed.">			if(!isValid(s)) { return false; } //if any of them don't end with .txt or .pdf, return false (invalid)</span>
+		}
+		
+<span class="nc" id="L53">		return true; //otherwise, return true (valid)</span>
+	}
+
+	/**
+	 * Takes in the ArrayList of the raw text of the document and creates an ArrayList
+	 * for separting words after spaces.
+	 *
+	 * @param fileName - name of the file
+	 *
+	 * @try trying to get the file and see if the file is properly formatted
+	 * @catch if the file is not corrcetly formatted the file will return null and
+	 * an exception
+	 * @return the raw text is return from the requested file/files
+	 */
+	public static ArrayList&lt;String&gt; giveRawText(String fileName)
+	{
+		
+<span class="nc" id="L70">		ArrayList&lt;String&gt; rawText = new ArrayList&lt;String&gt;(); //initialize return arraylist</span>
+		
+		Scanner scan;
+<span class="nc" id="L73">		try { scan = new Scanner(new File(fileName)); } //get the file</span>
+<span class="nc" id="L74">		catch(Exception ex) { return null; }            //if unsuccessful, return null</span>
+		
+<span class="nc bnc" id="L76" title="All 2 branches missed.">		while(scan.hasNextLine()) //loop until we run out of lines</span>
+		{
+<span class="nc" id="L78">			String line = scan.nextLine();</span>
+			
+<span class="nc" id="L80">			String[] words = line.split(&quot; +&quot;); //split into words separated by spaces</span>
+			
+<span class="nc bnc" id="L82" title="All 2 branches missed.">			for(String s : words) //loop through all the words</span>
+			{
+<span class="nc" id="L84">				rawText.add(s);     //add each word to the raw text arraylist</span>
+			}	
+<span class="nc" id="L86">		}</span>
+		
+<span class="nc" id="L88">		scan.close(); //close the file</span>
+		
+<span class="nc" id="L90">		return rawText; //return result</span>
+	}
+
+	/**
+	 * Takes in a name and creates a document to set the raw text in the document and
+	 * returns that document.
+	 *
+	 * @param name - The file name of the document
+	 *
+	 * @return returns the document withholding the raw text
+	 */
+	public static Document readDocument(String name)
+	{
+<span class="nc" id="L103">		Document doc = new Document(name);        //create document</span>
+<span class="nc" id="L104">		doc.setWords(giveRawText(doc.getName())); //set words</span>
+<span class="nc" id="L105">		return doc;                               //return result</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

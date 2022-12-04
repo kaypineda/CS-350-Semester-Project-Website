@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Document.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Main</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350.pne</a> &gt; <span class="el_source">Document.java</span></div><h1>Document.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350.pne;
+
+import java.util.ArrayList;
+
+/**
+ * Document class that has the file name, the list of words needed for classification
+ * and the list of classifications
+ * 
+ */
+public class Document implements Iterable&lt;String&gt;
+{
+    private String name;
+    private ArrayList&lt;String&gt; words;
+    private ArrayList&lt;Character&gt; classes; //array of classifications
+    
+    /**
+     * Default constructor 
+     */
+    public Document() 
+<span class="nc" id="L20">    {</span>
+<span class="nc" id="L21">        name = &quot;file.txt&quot;;</span>
+<span class="nc" id="L22">        words = new ArrayList&lt;String&gt;();</span>
+<span class="nc" id="L23">        classes = new ArrayList&lt;Character&gt;();</span>
+<span class="nc" id="L24">    }</span>
+    
+    /**
+     * Constructor with classification added 
+     * 
+     * @param n name of the document
+     */
+    public Document(String n) 
+<span class="nc" id="L32">    {</span>
+<span class="nc" id="L33">        name = n;</span>
+<span class="nc" id="L34">        words = new ArrayList&lt;String&gt;();</span>
+<span class="nc" id="L35">        classes = new ArrayList&lt;Character&gt;();</span>
+<span class="nc" id="L36">    }</span>
+
+    /**
+     * Constructor to be used for AI training
+     * 
+     * @param n name of the document
+     * @param c letter for classification purposes 
+     */
+    public Document(String n, ArrayList&lt;Character&gt; c) 
+<span class="nc" id="L45">    {</span>
+<span class="nc" id="L46">        name = n;</span>
+<span class="nc" id="L47">        words = new ArrayList&lt;String&gt;();</span>
+<span class="nc" id="L48">        classes = c;</span>
+<span class="nc" id="L49">    }</span>
+
+    /**
+     * Constructor for Document
+     * 
+     * @param n name of the document
+     * @param w contains completed parsed words
+     * @param c contains classification character
+     */
+    public Document(String n, ArrayList&lt;String&gt; w, ArrayList&lt;Character&gt; c)
+<span class="nc" id="L59">    {</span>
+<span class="nc" id="L60">        name = n;</span>
+<span class="nc" id="L61">        words = w;</span>
+<span class="nc" id="L62">        classes = c;</span>
+<span class="nc" id="L63">    }</span>
+
+    /**
+     * Gets the name of the document
+     * 
+     * @return returns name of the document
+     */
+    public String getName()
+    {
+<span class="nc" id="L72">        return name;</span>
+    }
+
+    /**
+     * Gets the parsed arraylist of words
+     * 
+     * @return returns the parsed words
+     */
+    public ArrayList&lt;String&gt; getWords()
+    {
+<span class="nc" id="L82">        return words;</span>
+    }
+
+    /**
+     * Returns the classification list
+     * 
+     * @return classes  
+     */
+    public ArrayList&lt;Character&gt; getClasses()
+    {
+<span class="nc" id="L92">        return classes;</span>
+    }
+
+    /**
+     * Sets the document name
+     * 
+     * @param n document name
+     */
+    public void setName(String n)
+    {
+<span class="nc" id="L102">        name = n;</span>
+<span class="nc" id="L103">    }</span>
+
+    /**
+     * Stores the list of parsed words
+     * 
+     * @param w arraylist of parsed words
+     */
+    public void setWords(ArrayList&lt;String&gt; w)
+    {
+<span class="nc bnc" id="L112" title="All 2 branches missed.">        if(words!=null) { words = w; }</span>
+<span class="nc" id="L113">    }</span>
+
+    /**
+     * Sets the clssification letter of the document
+     * 
+     * @param c arraylist of the character classification 
+     */
+    public void setClasses(ArrayList&lt;Character&gt; c)
+    {
+<span class="nc" id="L122">        classes = c;</span>
+<span class="nc" id="L123">    }</span>
+
+    /**
+     * Adds the letter for the classification
+     * 
+     * @param c the letter for classification 
+     */
+    public void addClass(Character c)
+    {
+<span class="nc" id="L132">        classes.add(c);</span>
+<span class="nc" id="L133">    }</span>
+
+    /**
+     * Removes the letter for the classification
+     * 
+     * @param c class to be removed
+     */
+    public void removeClass(Character c)
+    {
+<span class="nc bnc" id="L142" title="All 2 branches missed.">        for (int i = 0; i &lt; classes.size(); i++)</span>
+        {
+<span class="nc bnc" id="L144" title="All 2 branches missed.">            if (classes.get(i).equals(c))</span>
+                {
+<span class="nc" id="L146">                    classes.remove(i);</span>
+<span class="nc" id="L147">                    return;</span>
+                }
+        }
+<span class="nc" id="L150">    }</span>
+
+    /**
+     * Checks if hashCode is equal
+     * 
+     * @return the hashCode of each private member
+     */
+    public int hashCode()
+    {
+<span class="nc" id="L159">        return name.hashCode() + words.hashCode() + classes.hashCode();</span>
+    }
+
+    /**
+     * Document clone function
+     * 
+     * @return a copy of Document
+     */
+    public Document clone()
+    {
+<span class="nc" id="L169">        return new Document(name, (ArrayList)words.clone(), (ArrayList)classes.clone()); //this ASSUMES that neither arraylists should be null</span>
+    }
+
+    /**
+     * Making sure document will be equal to another document object
+     * 
+     * @return the set rules of what will make them equal
+     */
+    public boolean equals(Object other)
+    {
+<span class="nc bnc" id="L179" title="All 2 branches missed.">        if(!(other instanceof Document)) //make sure it's a Document, if not</span>
+        {
+<span class="nc" id="L181">            return false;</span>
+        }
+        
+<span class="nc" id="L184">        Document rhs = (Document) other;</span>
+
+<span class="nc bnc" id="L186" title="All 2 branches missed.">        return this.name.equals(rhs.name)</span>
+<span class="nc bnc" id="L187" title="All 2 branches missed.">            &amp;&amp; this.words.equals(rhs.words)</span>
+<span class="nc bnc" id="L188" title="All 2 branches missed.">            &amp;&amp; this.classes.equals(rhs.classes);</span>
+    }
+
+    /**
+     * Turns document into a string
+     * 
+     * @return the buffer as a string
+     */
+    public String toString()
+    {
+<span class="nc" id="L198">        StringBuffer buf = new StringBuffer(&quot;{&quot;);</span>
+<span class="nc" id="L199">        buf.append(name);</span>
+<span class="nc" id="L200">        buf.append(words.size());</span>
+<span class="nc" id="L201">        buf.append(classes);</span>
+<span class="nc" id="L202">        buf.append(&quot;}&quot;);</span>
+
+<span class="nc" id="L204">        return buf.toString();</span>
+    }
+
+    /**
+     * Reads over the parsed words
+     * 
+     * @return an iterator for the list of words
+     */
+    public java.util.Iterator&lt;String&gt; iterator()
+    { 
+<span class="nc" id="L214">    	return words.iterator();   </span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

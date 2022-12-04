@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Main</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350.pne</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350.pne;
+
+/**
+ * The class whose sole purpose is to house the main function
+ * @author Team 7
+ *
+ */
+<span class="nc" id="L8">public class Main</span>
+{
+	//take in files
+	//tell me if files are valid
+	//generate a document
+	//parse the document
+	
+	/**
+	 * The main function, what runs when you run the program
+	 * @param args the names of the files we use to create documents
+	 */
+	public static void main(String[] args)
+	{
+		
+		//first, tell us if everything is valid
+		
+<span class="nc" id="L24">		boolean valid = true;    //whether all files are valid</span>
+<span class="nc bnc" id="L25" title="All 2 branches missed.">		for(String arg : args) { //loop through all file names</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">			if(!DocumentReader.isValid(arg)) { //if not valid</span>
+<span class="nc" id="L27">				System.out.println(arg+&quot; is not valid&quot;); valid=false; //print message, set valid to false</span>
+			}
+		}
+<span class="nc bnc" id="L30" title="All 2 branches missed.">		if(valid) { System.out.println(&quot;All files are valid&quot;); } //if all files were valid, print message</span>
+<span class="nc" id="L31">		System.out.println();                                    //add another empty line</span>
+		
+		
+		
+		//now, parse the documents
+		
+<span class="nc" id="L37">		Document[] docs = new Document[args.length]; //create array of documents</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">		for(int n=0;n&lt;args.length;n++) {             //loop through all files</span>
+<span class="nc" id="L39">			docs[n] = DocumentReader.readDocument(args[n]); //set each document</span>
+		}
+		
+<span class="nc" id="L42">		StopList list = new StopList(&quot;src/main/resources/Stoplist.txt&quot;); //create stop list</span>
+		
+<span class="nc bnc" id="L44" title="All 2 branches missed.">		for(Document doc : docs) { //loop through all documents</span>
+<span class="nc" id="L45">			Parser.toLowerCase(doc);         //make raw text lower case</span>
+<span class="nc" id="L46">			Parser.removePunctuation(doc);   //remove punctuation from raw text</span>
+<span class="nc" id="L47">			Parser.pruneStopList(doc, list); //remove all stop words</span>
+		}
+		
+<span class="nc" id="L50">		System.out.println(&quot;Successful!&quot;); //tell us everything was successful</span>
+<span class="nc" id="L51">	}</span>
+}
+
+// Classify
+/// Take in file(s)
+/// Read file(s)
+/// Output classification(s)
+
+// Train
+/// Take in file and classification(s)
+/// Retrain model
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
