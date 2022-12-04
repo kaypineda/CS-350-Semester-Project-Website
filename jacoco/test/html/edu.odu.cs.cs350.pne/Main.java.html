@@ -42,15 +42,13 @@
 <span class="nc" id="L42">		StopList list = new StopList(&quot;src/main/resources/Stoplist.txt&quot;); //create stop list</span>
 		
 <span class="nc bnc" id="L44" title="All 2 branches missed.">		for(Document doc : docs) { //loop through all documents</span>
-<span class="nc" id="L45">			Parser.toLowerCase(doc);         //make raw text lowercase</span>
+<span class="nc" id="L45">			Parser.toLowerCase(doc);         //make raw text lower case</span>
 <span class="nc" id="L46">			Parser.removePunctuation(doc);   //remove punctuation from raw text</span>
 <span class="nc" id="L47">			Parser.pruneStopList(doc, list); //remove all stop words</span>
 		}
 		
-		//System.out.println(doc.getWords());
-		
-<span class="nc" id="L52">		System.out.println(&quot;Successful!&quot;); //tell us everything was successful</span>
-<span class="nc" id="L53">	}</span>
+<span class="nc" id="L50">		System.out.println(&quot;Successful!&quot;); //tell us everything was successful</span>
+<span class="nc" id="L51">	}</span>
 }
 
 // Classify
@@ -61,4 +59,4 @@
 // Train
 /// Take in file and classification(s)
 /// Retrain model
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
