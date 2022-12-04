@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Main,edu.odu.cs.cs350.pne,Parser,63,62,16,12,11,10,16,3,2,3
+Main,edu.odu.cs.cs350.pne,StopList,0,153,0,10,0,27,0,13,0,8
+Main,edu.odu.cs.cs350.pne,DocumentReader,110,0,12,0,22,0,11,0,5,0
+Main,edu.odu.cs.cs350.pne,Document,17,183,4,10,3,48,5,19,1,16
+Main,edu.odu.cs.cs350.pne,Main,88,0,10,0,17,0,7,0,2,0
+Main,edu.odu.cs.cs350.pne,Trainer,3,0,0,0,1,0,1,0,1,0
+Main,edu.odu.cs.cs350.pne,Librarian,3,0,0,0,1,0,1,0,1,0
