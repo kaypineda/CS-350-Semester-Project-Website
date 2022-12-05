@@ -15,8 +15,11 @@ buildDependents - Assembles and tests this project and all projects that depend 
 buildNeeded - Assembles and tests this project and all projects it depends on.
 classes - Assembles main classes.
 clean - Deletes the build directory.
+integrationTestClasses - Assembles integration test classes.
+integrationTestJar - Assembles a jar archive containing the integrationTest classes.
 jar - Assembles a jar archive containing the main classes.
 testClasses - Assembles test classes.
+testJar - Assembles a jar archive containing the unitTest classes.
 
 Build Setup tasks
 -----------------
@@ -36,6 +39,11 @@ bake - Bake a jbake project
 bakeInit - Setup a jbake project
 bakePreview - Preview a jbake project
 javadoc - Generates Javadoc API documentation for the main source code.
+
+GitHub Pages tasks
+------------------
+copyJBakePages
+updateGHPages - Copies everything into "gh-pages" directory and push to report site
 
 Help tasks
 ----------
@@ -57,14 +65,16 @@ reportStats - Collect summary statistics from analysis tools.
 Verification tasks
 ------------------
 check - Runs all checks.
+integrationTest - Runs the integrationTest tests.
 jacocoAggregatedReport - Generates an aggregated report on this project and all subprojects
+jacocoIntegrationTestReport - Generates code coverage report for the integrationTest tests.
 jacocoLogAggregatedCoverage - Logs JaCoCo test coverage from report task 'jacocoAggregatedReport'.
+jacocoLogIntegrationTestCoverage - Logs JaCoCo test coverage from report task 'jacocoIntegrationTestReport'.
+jacocoLogMergedTestCoverage - Logs JaCoCo test coverage from report task 'jacocoMergedTestReport'.
 jacocoLogTestCoverage - Logs JaCoCo test coverage from report task 'jacocoTestReport'.
 jacocoTestCoverageVerification - Verifies code coverage metrics based on specified rules for the test task.
 jacocoTestReport - Generates code coverage report for the test task.
-spotbugsMain - Run SpotBugs analysis for the source set 'main'
-spotbugsTest - Run SpotBugs analysis for the source set 'test'
-test - Runs the test suite.
+test - Runs the unitTest tests.
 
 Rules
 -----
