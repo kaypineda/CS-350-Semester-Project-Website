@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StopList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Main</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350.acmClassifier</a> &gt; <span class="el_source">StopList.java</span></div><h1>StopList.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350.acmClassifier;
+
+import java.io.File;
+import java.util.Scanner;
+import java.util.HashSet;
+
+/**
+ * List containing all the stop words (common words)
+ * There will only be one instance of stop list, for our purposes at least
+ * 
+ * @author Chris, Kayla
+ */
+public class StopList
+{
+	/***
+	 * Stores all the unneeded words
+	 */
+<span class="fc" id="L18">	private HashSet&lt;String&gt; stopList = new HashSet&lt;String&gt;();</span>
+	
+	/***
+	 * Default constructor, cenerates a stop list from a file
+	 * 
+	 * @param fileName file containing stop words
+	 * 
+	 * @throws RuntimeException if file does not exists or cannot be opened
+	 */
+	public StopList(String fileName)
+<span class="fc" id="L28">	{ </span>
+		Scanner scan; 
+<span class="fc" id="L30">		try { scan = new Scanner(new File(fileName)); } //try to initialize scanner</span>
+<span class="fc" id="L31">		catch(Exception ex) { throw new RuntimeException(&quot;Cannot open file \&quot;&quot;+fileName+&quot;\&quot;&quot;); }</span>
+		
+		// while file file has next line
+<span class="fc bfc" id="L34" title="All 2 branches covered.">		while(scan.hasNextLine())</span>
+		{ 
+<span class="fc" id="L36">			String line = scan.nextLine();</span>
+			
+<span class="fc" id="L38">			String[] split = line.split(&quot; &quot;);                  //split line into chunks separated by spaces</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">			for(String s : split) { stopList.add(s.toLowerCase()); } //add each word to our list</span>
+<span class="fc" id="L40">		}</span>
+		
+<span class="fc" id="L42">		scan.close();</span>
+		
+<span class="fc" id="L44">		stopList.add(&quot;&quot;); //add the empty string to the stop list to apply a special case pruning measure</span>
+<span class="fc" id="L45">	}</span>
+
+	/***
+	 * Constructor, sets existing stop list to current stop list
+	 * 
+	 * @param stop existing stop list
+	 */
+	public StopList(HashSet&lt;String&gt; stop)
+<span class="fc" id="L53">	{</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">		for(String s : stop) { stopList.add(s.toLowerCase()); }</span>
+<span class="fc" id="L55">	}</span>
+
+
+	/***
+	 * Retreve stop list
+	 * 
+	 * @return the stop list
+	 */
+	public HashSet&lt;String&gt; getStoplist()
+	{
+<span class="fc" id="L65">		return stopList;</span>
+	}
+
+	/***
+	 * Set stop list to existing stop list
+	 *  
+	 * @param sl new stop list
+	 */
+	public void setStoplist(HashSet&lt;String&gt; sl)
+	{
+<span class="fc" id="L75">		stopList.clear();</span>
+
+<span class="fc bfc" id="L77" title="All 2 branches covered.">		for(String s : sl) { stopList.add(s.toLowerCase()); }</span>
+<span class="fc" id="L78">	}</span>
+
+
+	/***
+	 * Adds a word to the stop list
+	 * 
+	 * @param word word to be added to the stop list
+	 */
+	public void addToStopList(String word)
+	{
+<span class="fc" id="L88">		stopList.add(word.toLowerCase());</span>
+<span class="fc" id="L89">	}</span>
+
+	/***
+	 * Removes a word from the stop list
+	 * 
+	 * @param word word to be removed from the stop list
+	 */
+	public void removeFromStopList(String word)
+	{
+<span class="fc" id="L98">		stopList.remove(word.toLowerCase());</span>
+<span class="fc" id="L99">	}</span>
+	
+
+	/***
+	 * Returns stop list in string format
+	 */
+	@Override
+	public String toString()
+	{
+<span class="fc" id="L108">		String result = &quot;&quot;;</span>
+<span class="fc bfc" id="L109" title="All 2 branches covered.">		for(String s : stopList) { result+=s+&quot;, &quot;; }</span>
+<span class="fc" id="L110">		return result;</span>
+	}
+	
+	/***
+	 * Check if stop list contains words
+	 * 
+	 * @param word word to search for in list
+	 * @return true if found, false if not found
+	 */
+	public boolean contains(String word)
+	{
+<span class="fc" id="L121">		return stopList.contains(word.toLowerCase()); //return true iff stoplist contains word</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

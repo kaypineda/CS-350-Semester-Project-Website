@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Parser.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Main</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350.acmClassifier</a> &gt; <span class="el_source">Parser.java</span></div><h1>Parser.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350.acmClassifier;
+
+import java.util.ArrayList;
+
+/**
+ * A class created for the purpose of performing complex parsing functions on a document's raw text, such as removing punctuation and making all
+ * words all lowercase
+ * 
+ * @author chris
+ * @version 1
+ *
+ */
+<span class="nc" id="L13">public class Parser {</span>
+	
+	/**
+	 * Changes all raw text to be all lowercase
+	 * @param doc the document whose raw text we edit
+	 */
+	public static void toLowerCase(Document doc) { //converts each word to all lowercase
+<span class="nc" id="L20">		ArrayList&lt;String&gt; words = doc.getWords(); //get words</span>
+		
+<span class="nc bnc" id="L22" title="All 2 branches missed.">		for(int n=0;n&lt;words.size();n++) { //we're using index instead of iterators because we need to know what the index is to edit the arraylist</span>
+<span class="nc" id="L23">			words.set(n, words.get(n).toLowerCase()); //lowercase each word</span>
+		}
+<span class="nc" id="L25">	}</span>
+	
+	
+	/**
+	 * Removes all punctuation from the raw text in a document (within reason)
+	 * @param doc the document whose raw text we edit
+	 */
+	public static void removePunctuation(Document doc) { //removes puncuation from each word
+<span class="nc" id="L33">		ArrayList&lt;String&gt; words = doc.getWords(); //get words</span>
+		
+<span class="nc bnc" id="L35" title="All 2 branches missed.">		for(int n=0;n&lt;words.size();n++) { //loop through all words</span>
+<span class="nc" id="L36">			words.set(n, removePunctuation(words.get(n))); //remove punctuation</span>
+		}
+<span class="nc" id="L38">	}</span>
+	
+	/**
+	 * Removes all punctuation from a single word (within reason)
+	 * @param s the string we remove the punctuation from
+	 * @return the edited, punctuation-free string
+	 */
+	public static String removePunctuation(String s) {
+<span class="nc bnc" id="L46" title="All 4 branches missed.">		while(s.startsWith(&quot;\&quot;&quot;)||s.startsWith(&quot;(&quot;)) {</span>
+<span class="nc" id="L47">			s = s.substring(1); //remove all quotes and ( at the start</span>
+		}
+<span class="nc bnc" id="L49" title="All 12 branches missed.">		while(s.endsWith(&quot;.&quot;)||s.endsWith(&quot;,&quot;)||s.endsWith(&quot;?&quot;)||s.endsWith(&quot;!&quot;)||s.endsWith(&quot;\&quot;&quot;)||s.endsWith(&quot;)&quot;)||</span>
+<span class="nc bnc" id="L50" title="All 4 branches missed.">		      s.endsWith(&quot;:&quot;)||s.endsWith(&quot;;&quot;)) {</span>
+<span class="nc" id="L51">			s = s.substring(0,s.length()-1); //remove all end-of-sentence, commas, quotes, ), colons, and semicolons at the end</span>
+		}
+		//anything else would be an unusual case and, considering the small gain in information, would not be worth the effort to remove
+<span class="nc" id="L54">		return s; //return result</span>
+	}
+	
+	/**
+	 * Given a list of forbidden words, this removes any and all instances of said words from the raw text in a document
+	 * @param doc the document we remove the forbidden words from
+	 * @param stop the list of forbidden words
+	 */
+	public static void pruneStopList(Document doc, StopList stop) {
+<span class="nc" id="L63">		ArrayList&lt;String&gt; words = doc.getWords(); //get words</span>
+		
+<span class="nc bnc" id="L65" title="All 2 branches missed.">		for(int n=0;n&lt;words.size();n++) { //loop through all words</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">			if(stop.contains(words.get(n))) { //if part of stop list</span>
+<span class="nc" id="L67">				words.remove(n); //remove this word</span>
+<span class="nc" id="L68">				n--;             //go back a step to avoid skipping the element after the deleted word</span>
+			}
+		}
+<span class="nc" id="L71">	}</span>
+	
+	//ignore dashes in the middle of words, just keep it all
+	
+	// . ? ! ) : ; , 
+	// (
+	// &quot;
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
