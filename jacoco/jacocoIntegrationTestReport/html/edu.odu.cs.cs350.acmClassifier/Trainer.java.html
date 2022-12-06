@@ -5,8 +5,99 @@
  * @author Team 7
  */
 
-<span class="nc" id="L8">public class Trainer</span>
+public class Trainer
 {
+  private Document trainingDoc; // document used for training
+
+  /**
+   * Default Constructor
+   */
+  public Trainer()
+<span class="nc" id="L16">  {</span>
+<span class="nc" id="L17">    trainingDoc = new Document();</span>
+<span class="nc" id="L18">  }</span>
+
+  /**
+   * Constructor given training document
+   * 
+   * @param doc Document to be used for training
+   */
+  public Trainer(Document doc)
+<span class="nc" id="L26">  {</span>
+<span class="nc" id="L27">    trainingDoc = doc;</span>
+<span class="nc" id="L28">  }</span>
+
+  /**
+   * Returns training document
+   * 
+   * @return the training document
+   */
+  public Document getTrainingDoc()
+  {
+<span class="nc" id="L37">    return trainingDoc;</span>
+  }
+
+  /**
+   * Sets training document
+   * 
+   * @param doc the document to be used for training
+   */
+  public void setTrainingDoc(Document doc)
+  {
+<span class="nc" id="L47">    trainingDoc = doc;</span>
+<span class="nc" id="L48">  }</span>
+
+  /**
+   * Returns hashCode
+   * 
+   * @return the hashCose of each private member
+   */
+  public int hashCode()
+  {
+<span class="nc" id="L57">    return trainingDoc.hashCode();</span>
+  }
+
+  /**
+   * Trainer clone function
+   * 
+   * @return a copy of Trainer
+   */
+  public Trainer clone()
+  {
+<span class="nc" id="L67">    return new Trainer(trainingDoc);</span>
+  }
+
+  /**
+   * Check if an object equals trainer
+   * 
+   * @return true if objects equal/ false if not
+   */
+  public boolean equals(Object other)
+  {
+<span class="nc bnc" id="L77" title="All 2 branches missed.">    if(!(other instanceof Trainer)) // if not a trainer</span>
+    {
+<span class="nc" id="L79">      return false;</span>
+    }
+
+<span class="nc" id="L82">    Trainer rhs = (Trainer) other;</span>
+
+<span class="nc" id="L84">    return this.trainingDoc.equals(rhs.trainingDoc);</span>
+  }
+
+  /**
+     * Turns trainer into a string
+     * 
+     * @return the buffer as a string
+     */
+  public String toString()
+  {
+<span class="nc" id="L94">    StringBuffer buff = new StringBuffer(&quot;{&quot;);</span>
+<span class="nc" id="L95">    buff.append(trainingDoc);</span>
+<span class="nc" id="L96">    buff.append(&quot;}&quot;);</span>
+
+<span class="nc" id="L98">    return buff.toString();</span>
+  }
+
   /*
   Is a class for the trainers for our neural networks. Given a set of documents, as well as the correct classifications for each document, it's going to
   ask each of a set of neural networks to determine the classification for each document, then grade them based on how well they did (the grade is known

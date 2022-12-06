@@ -1,12 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Librarian.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Main</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350.acmClassifier</a> &gt; <span class="el_source">Librarian.java</span></div><h1>Librarian.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350.acmClassifier;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Class used for classifying documents through ML
  * @author Team 7
  */
 
-<span class="nc" id="L8">public class Librarian</span>
+public class Librarian
 {
+    private ArrayList&lt;Document&gt; docsToClassify;
+    private String priorTraining; // file path containing a previous training state
+
+    /**
+     * Default Constructor
+     */
+    public Librarian()
+<span class="nc" id="L20">    {</span>
+<span class="nc" id="L21">        docsToClassify = new ArrayList&lt;Document&gt;();</span>
+<span class="nc" id="L22">        priorTraining = &quot;&quot;;</span>
+<span class="nc" id="L23">    }</span>
+
+    /**
+     * Constructor given only one document
+     * 
+     * @param doc Only document supplied
+     */
+    public Librarian(Document doc)
+<span class="nc" id="L31">    {</span>
+<span class="nc" id="L32">        docsToClassify = new ArrayList&lt;Document&gt;(Arrays.asList(doc));</span>
+<span class="nc" id="L33">        priorTraining = &quot;&quot;;</span>
+<span class="nc" id="L34">    }</span>
+
+    /**
+     * Constructor where only docs to be classified are given
+     * 
+     * @param docs A document/ list of documents to be classified
+     */
+    public Librarian(ArrayList&lt;Document&gt; docs)
+<span class="nc" id="L42">    {</span>
+<span class="nc" id="L43">        docsToClassify = docs;</span>
+<span class="nc" id="L44">        priorTraining = &quot;&quot;;</span>
+<span class="nc" id="L45">    }</span>
+
+    /**
+     * Constructor where docts to be classified and a prior training state
+     * are given
+     * 
+     * @param docs A document/ list of documents to be classified
+     * @param prior File path of a prior training state
+     */
+    public Librarian(ArrayList&lt;Document&gt; docs, String prior)
+<span class="nc" id="L55">    {</span>
+<span class="nc" id="L56">        docsToClassify = docs;</span>
+<span class="nc" id="L57">        priorTraining = prior;</span>
+<span class="nc" id="L58">    }</span>
+
+    /**
+     * Get document(s) to classify
+     * 
+     * @return Document(s) to classify
+     */
+    public ArrayList&lt;Document&gt; getDocs()
+    {
+<span class="nc" id="L67">        return docsToClassify;</span>
+    }
+
+    /**
+     * Get training state
+     * 
+     * @return training state
+     */
+    public String getTrainingState()
+    {
+<span class="nc" id="L77">        return priorTraining;</span>
+    }
+
+    /**
+     * Set document(s) to be trained
+     * 
+     * @param docs Documents to be trained
+     */
+    public void setDocs(ArrayList&lt;Document&gt; docs)
+    {
+<span class="nc" id="L87">        docsToClassify = docs;</span>
+<span class="nc" id="L88">    }</span>
+
+    /**
+     * Set training state to be used
+     * 
+     * @param training File path to previous training state
+     */
+    public void setTrainingState(String training)
+    {
+<span class="nc" id="L97">        priorTraining = training;</span>
+<span class="nc" id="L98">    }</span>
+
+    /**
+     * Add a document to be classified
+     * 
+     * @param doc New document to be classified
+     */
+    public void addDocument(Document doc)
+    {
+<span class="nc" id="L107">        docsToClassify.add(doc);</span>
+<span class="nc" id="L108">    }</span>
+
+    /**
+     * Removes a document from documents to be classified
+     * 
+     * @param doc Document to be removed
+     */
+    public void removeDocument(Document doc)
+    {
+<span class="nc bnc" id="L117" title="All 2 branches missed.">        for (int i = 0; i &lt; docsToClassify.size(); i++)</span>
+        {
+<span class="nc bnc" id="L119" title="All 2 branches missed.">            if (docsToClassify.get(i).equals(doc))</span>
+                {
+<span class="nc" id="L121">                    docsToClassify.remove(i);</span>
+<span class="nc" id="L122">                    return;</span>
+                }
+        }
+<span class="nc" id="L125">    }</span>
+
+    /**
+   * Returns hashCode
+   * 
+   * @return the hashCose of each private member
+   */
+  public int hashCode()
+  {
+<span class="nc" id="L134">    return docsToClassify.hashCode();</span>
+  }
+
+  /**
+   * Trainer clone function
+   * 
+   * @return a copy of Librarian
+   */
+  public Librarian clone()
+  {
+<span class="nc" id="L144">    return new Librarian(docsToClassify, priorTraining);</span>
+  }
+
+  /**
+   * Check if an object equals trainer
+   * 
+   * @return true if objects equal/ false if not
+   */
+  public boolean equals(Object other)
+  {
+<span class="nc bnc" id="L154" title="All 2 branches missed.">    if(!(other instanceof Librarian)) // if not a librarian</span>
+    {
+<span class="nc" id="L156">      return false;</span>
+    }
+
+<span class="nc" id="L159">    Librarian rhs = (Librarian) other;</span>
+
+<span class="nc bnc" id="L161" title="All 2 branches missed.">    return this.docsToClassify.equals(rhs.docsToClassify)</span>
+<span class="nc bnc" id="L162" title="All 2 branches missed.">        &amp;&amp; this.priorTraining.equals(rhs.priorTraining);</span>
+  }
+
+  /**
+     * Turns trainer into a string
+     * 
+     * @return the buffer as a string
+     */
+  public String toString()
+  {
+<span class="nc" id="L172">    StringBuffer buff = new StringBuffer(&quot;{&quot;);</span>
+<span class="nc" id="L173">    buff.append(docsToClassify);</span>
+<span class="nc" id="L174">    buff.append(priorTraining);</span>
+<span class="nc" id="L175">    buff.append(&quot;}&quot;);</span>
+
+<span class="nc" id="L177">    return buff.toString();</span>
+  }
+
+
     // Classify a document
     /// Gets a document(s)
     /// Sends document through ML algorithm

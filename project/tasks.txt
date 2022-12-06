@@ -43,7 +43,12 @@ javadoc - Generates Javadoc API documentation for the main source code.
 GitHub Pages tasks
 ------------------
 copyJBakePages
-updateGHPages - Copies everything into "gh-pages" directory and push to report site
+updateGHPages - Copies everything into 'gh-pages' directory and push to report site
+
+Gradle Enterprise tasks
+-----------------------
+buildScanPublishPrevious - Publishes the data captured by the last build.
+provisionGradleEnterpriseAccessKey - Provisions a new access key for this build environment.
 
 Help tasks
 ----------
