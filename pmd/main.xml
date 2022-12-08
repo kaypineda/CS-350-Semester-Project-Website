@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-12-06T16:47:35.364">
+    version="6.21.0" timestamp="2022-12-08T18:49:55.879">
 <file name="D:\ODU\CS 350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\acmClassifier\Document.java">
 <violation beginline="1" endline="1" begincolumn="9" endcolumn="38" rule="PackageCase" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Document" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#packagecase" priority="3">
 Package name contains upper case characters
@@ -391,10 +391,10 @@ Found 'DD'-anomaly for variable 'docs' (lines '39'-'39').
 <violation beginline="39" endline="39" begincolumn="35" endcolumn="70" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="42" endline="51" begincolumn="26" endcolumn="79" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Main" method="main" variable="list" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+<violation beginline="42" endline="51" begincolumn="26" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Main" method="main" variable="list" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
 Found 'DU'-anomaly for variable 'list' (lines '42'-'51').
 </violation>
-<violation beginline="42" endline="42" begincolumn="17" endcolumn="79" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Main" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Main" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'list' could be declared final
 </violation>
 <violation beginline="44" endline="44" begincolumn="21" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Main" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
@@ -512,135 +512,168 @@ It is somewhat confusing to have a field name matching the declaring class name
 <violation beginline="18" endline="18" begincolumn="33" endcolumn="40" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="StopList" variable="stopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'stopList' could be made final; it is only initialized in the declaration or constructor.
 </violation>
-<violation beginline="27" endline="27" begincolumn="25" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="fileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
-Parameter 'fileName' is not assigned and could be declared final
+<violation beginline="26" endline="26" begincolumn="22" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'word' could be declared final
 </violation>
-<violation beginline="29" endline="29" begincolumn="25" endcolumn="28" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="scan" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
-Ensure that resources like this Scanner object are closed after use
+<violation beginline="31" endline="31" begincolumn="14" endcolumn="24" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'word' could be declared final
 </violation>
-<violation beginline="31" endline="31" begincolumn="23" endcolumn="31" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
-Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
-</violation>
-<violation beginline="31" endline="31" begincolumn="49" endcolumn="64" rule="AvoidThrowingRawExceptionTypes" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidthrowingrawexceptiontypes" priority="1">
-Avoid throwing raw exception types.
-</violation>
-<violation beginline="31" endline="31" begincolumn="39" endcolumn="102" rule="PreserveStackTrace" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#preservestacktrace" priority="3">
-New exception is thrown in catch block, original stack trace may be lost
-</violation>
-<violation beginline="36" endline="36" begincolumn="25" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-Local variable 'line' could be declared final
-</violation>
-<violation beginline="38" endline="38" begincolumn="25" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-Local variable 'split' could be declared final
-</violation>
-<violation beginline="39" endline="39" begincolumn="29" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-Local variable 's' could be declared final
-</violation>
-<violation beginline="39" endline="39" begincolumn="62" endcolumn="76" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
-When doing a String.toLowerCase()/toUpperCase() call, use a Locale
-</violation>
-<violation beginline="52" endline="52" begincolumn="25" endcolumn="39" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+<violation beginline="45" endline="45" begincolumn="25" endcolumn="39" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
 Avoid using implementation types like 'HashSet'; use the interface instead
 </violation>
-<violation beginline="52" endline="52" begincolumn="25" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="stop" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="45" endline="45" begincolumn="25" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="stop" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'stop' is not assigned and could be declared final
 </violation>
-<violation beginline="54" endline="54" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="47" endline="47" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 's' could be declared final
 </violation>
-<violation beginline="54" endline="54" begincolumn="53" endcolumn="67" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+<violation beginline="47" endline="47" begincolumn="53" endcolumn="67" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="StopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
 When doing a String.toLowerCase()/toUpperCase() call, use a Locale
 </violation>
-<violation beginline="63" endline="63" begincolumn="16" endcolumn="30" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="getStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+<violation beginline="56" endline="56" begincolumn="16" endcolumn="30" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="getStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
 Avoid using implementation types like 'HashSet'; use the interface instead
 </violation>
-<violation beginline="73" endline="73" begincolumn="33" endcolumn="47" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+<violation beginline="67" endline="67" begincolumn="33" endcolumn="47" rule="LooseCoupling" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
 Avoid using implementation types like 'HashSet'; use the interface instead
 </violation>
-<violation beginline="73" endline="73" begincolumn="49" endcolumn="50" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" variable="sl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+<violation beginline="67" endline="67" begincolumn="49" endcolumn="50" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" variable="sl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
 Avoid variables with short names like sl
 </violation>
-<violation beginline="73" endline="73" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" variable="sl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="67" endline="67" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" variable="sl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'sl' is not assigned and could be declared final
 </violation>
-<violation beginline="77" endline="77" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="71" endline="71" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 's' could be declared final
 </violation>
-<violation beginline="77" endline="77" begincolumn="51" endcolumn="65" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+<violation beginline="71" endline="71" begincolumn="51" endcolumn="65" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="setStoplist" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
 When doing a String.toLowerCase()/toUpperCase() call, use a Locale
 </violation>
-<violation beginline="86" endline="86" begincolumn="35" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="addToStopList" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="80" endline="80" begincolumn="35" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="addToStopList" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'word' is not assigned and could be declared final
 </violation>
-<violation beginline="88" endline="88" begincolumn="30" endcolumn="47" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="addToStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+<violation beginline="82" endline="82" begincolumn="30" endcolumn="47" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="addToStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
 When doing a String.toLowerCase()/toUpperCase() call, use a Locale
 </violation>
-<violation beginline="96" endline="96" begincolumn="40" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="removeFromStopList" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="91" endline="91" begincolumn="40" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="removeFromStopList" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'word' is not assigned and could be declared final
 </violation>
-<violation beginline="98" endline="98" begincolumn="33" endcolumn="50" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="removeFromStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+<violation beginline="93" endline="93" begincolumn="33" endcolumn="50" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="removeFromStopList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
 When doing a String.toLowerCase()/toUpperCase() call, use a Locale
 </violation>
-<violation beginline="109" endline="109" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="104" endline="104" begincolumn="21" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 's' could be declared final
 </violation>
-<violation beginline="109" endline="109" begincolumn="50" endcolumn="51" rule="UseStringBufferForStringAppends" ruleset="Performance" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#usestringbufferforstringappends" priority="3">
+<violation beginline="104" endline="104" begincolumn="50" endcolumn="51" rule="UseStringBufferForStringAppends" ruleset="Performance" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#usestringbufferforstringappends" priority="3">
 Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
 </violation>
-<violation beginline="119" endline="119" begincolumn="33" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="contains" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="115" endline="115" begincolumn="33" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="contains" variable="word" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'word' is not assigned and could be declared final
 </violation>
-<violation beginline="121" endline="121" begincolumn="42" endcolumn="59" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+<violation beginline="117" endline="117" begincolumn="42" endcolumn="59" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
 When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="126" endline="129" begincolumn="12" endcolumn="5" rule="ProperCloneImplementation" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#propercloneimplementation" priority="2">
+Object clone() should be implemented with super.clone()
+</violation>
+<violation beginline="126" endline="129" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'clone()' is missing an @Override annotation.
+</violation>
+<violation beginline="126" endline="129" begincolumn="12" endcolumn="5" rule="CloneMethodMustImplementCloneable" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonemethodmustimplementcloneable" priority="3">
+clone() method should be implemented only if implementing Cloneable interface
+</violation>
+<violation beginline="126" endline="129" begincolumn="12" endcolumn="5" rule="CloneThrowsCloneNotSupportedException" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonethrowsclonenotsupportedexception" priority="3">
+clone() method should throw CloneNotSupportedException
+</violation>
+<violation beginline="136" endline="136" begincolumn="27" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="equals" variable="other" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="136" endline="148" begincolumn="12" endcolumn="5" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'equals(Object)' is missing an @Override annotation.
+</violation>
+<violation beginline="138" endline="147" begincolumn="9" endcolumn="17" rule="ConfusingTernary" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="140" endline="140" begincolumn="13" endcolumn="25" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="144" endline="144" begincolumn="25" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'rhs' could be declared final
+</violation>
+<violation beginline="156" endline="159" begincolumn="16" endcolumn="9" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="StopList" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+The method 'hashCode()' is missing an @Override annotation.
 </violation>
 </file>
 <file name="D:\ODU\CS 350\CS-350-Semester-Project\src\main\java\edu\odu\cs\cs350\acmClassifier\Trainer.java">
 <violation beginline="1" endline="1" begincolumn="9" endcolumn="38" rule="PackageCase" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#packagecase" priority="3">
 Package name contains upper case characters
 </violation>
-<violation beginline="25" endline="25" begincolumn="18" endcolumn="29" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="Trainer" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="19" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="38" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'weka.classifiers.functions.SMO'
+</violation>
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="58" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'weka.classifiers.functions.supportVector.RBFKernel'
+</violation>
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'weka.core.Instances'
+</violation>
+<violation beginline="9" endline="9" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'weka.core.Instance'
+</violation>
+<violation beginline="10" endline="10" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'weka.core.DenseInstance'
+</violation>
+<violation beginline="11" endline="11" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'weka.core.Attribute'
+</violation>
+<violation beginline="35" endline="35" begincolumn="18" endcolumn="29" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="Trainer" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'doc' is not assigned and could be declared final
 </violation>
-<violation beginline="45" endline="45" begincolumn="30" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="setTrainingDoc" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="55" endline="55" begincolumn="30" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="setTrainingDoc" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'doc' is not assigned and could be declared final
 </violation>
-<violation beginline="55" endline="58" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+<violation beginline="65" endline="68" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
 The method 'hashCode()' is missing an @Override annotation.
 </violation>
-<violation beginline="65" endline="68" begincolumn="10" endcolumn="3" rule="ProperCloneImplementation" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#propercloneimplementation" priority="2">
+<violation beginline="75" endline="78" begincolumn="10" endcolumn="3" rule="ProperCloneImplementation" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#propercloneimplementation" priority="2">
 Object clone() should be implemented with super.clone()
 </violation>
-<violation beginline="65" endline="68" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+<violation beginline="75" endline="78" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
 The method 'clone()' is missing an @Override annotation.
 </violation>
-<violation beginline="65" endline="68" begincolumn="10" endcolumn="3" rule="CloneMethodMustImplementCloneable" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonemethodmustimplementcloneable" priority="3">
+<violation beginline="75" endline="78" begincolumn="10" endcolumn="3" rule="CloneMethodMustImplementCloneable" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonemethodmustimplementcloneable" priority="3">
 clone() method should be implemented only if implementing Cloneable interface
 </violation>
-<violation beginline="65" endline="68" begincolumn="10" endcolumn="3" rule="CloneThrowsCloneNotSupportedException" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonethrowsclonenotsupportedexception" priority="3">
+<violation beginline="75" endline="78" begincolumn="10" endcolumn="3" rule="CloneThrowsCloneNotSupportedException" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="clone" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#clonethrowsclonenotsupportedexception" priority="3">
 clone() method should throw CloneNotSupportedException
 </violation>
-<violation beginline="75" endline="75" begincolumn="25" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" variable="other" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="85" endline="85" begincolumn="25" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" variable="other" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'other' is not assigned and could be declared final
 </violation>
-<violation beginline="75" endline="85" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+<violation beginline="85" endline="97" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
 The method 'equals(Object)' is missing an @Override annotation.
 </violation>
-<violation beginline="79" endline="79" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+<violation beginline="87" endline="96" begincolumn="5" endcolumn="5" rule="ConfusingTernary" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="89" endline="89" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
 A method should have only one exit point, and that should be the last statement in the method
 </violation>
-<violation beginline="82" endline="82" begincolumn="5" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="93" endline="93" begincolumn="7" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'rhs' could be declared final
 </violation>
-<violation beginline="92" endline="99" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+<violation beginline="104" endline="111" begincolumn="10" endcolumn="3" rule="MissingOverride" ruleset="Best Practices" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
 The method 'toString()' is missing an @Override annotation.
 </violation>
-<violation beginline="94" endline="94" begincolumn="5" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="106" endline="106" begincolumn="5" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'buff' could be declared final
 </violation>
-<violation beginline="95" endline="95" begincolumn="5" endcolumn="29" rule="ConsecutiveAppendsShouldReuse" ruleset="Performance" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#consecutiveappendsshouldreuse" priority="3">
+<violation beginline="107" endline="107" begincolumn="5" endcolumn="29" rule="ConsecutiveAppendsShouldReuse" ruleset="Performance" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#consecutiveappendsshouldreuse" priority="3">
 StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
 </violation>
-<violation beginline="96" endline="96" begincolumn="17" endcolumn="19" rule="AppendCharacterWithChar" ruleset="Performance" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#appendcharacterwithchar" priority="3">
+<violation beginline="108" endline="108" begincolumn="17" endcolumn="19" rule="AppendCharacterWithChar" ruleset="Performance" package="edu.odu.cs.cs350.acmClassifier" class="Trainer" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#appendcharacterwithchar" priority="3">
 Avoid appending characters as strings in StringBuffer.append.
 </violation>
 </file>

@@ -31,7 +31,61 @@ checkstyle - The Checkstyle libraries to be used for this project.
      \--- net.sf.saxon:Saxon-HE:10.5
 
 compileClasspath - Compile classpath for source set 'main'.
-No dependencies
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+\--- edu.odu.cs.extract:extract-wordlists:4.2
 
 compileOnly - Compile only dependencies for source set 'main'. (n)
 No dependencies
@@ -43,7 +97,8 @@ default - Configuration for default artifacts. (n)
 No dependencies
 
 implementation - Implementation only dependencies for source set 'main'. (n)
-No dependencies
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2 (n)
+\--- edu.odu.cs.extract:extract-wordlists:4.2 (n)
 
 integrationTest (n)
 No dependencies
@@ -52,6 +107,61 @@ integrationTestAnnotationProcessor - Annotation processors and their dependencie
 No dependencies
 
 integrationTestCompileClasspath - Compile classpath for source set 'integration test'.
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
++--- edu.odu.cs.extract:extract-wordlists:4.2
 +--- org.junit.jupiter:junit-jupiter:5.8.2
 |    +--- org.junit:junit-bom:5.8.2
 |    |    +--- org.junit.jupiter:junit-jupiter:5.8.2 (c)
@@ -80,6 +190,61 @@ integrationTestImplementation - Implementation only dependencies for source set 
 No dependencies
 
 integrationTestPmdAuxClasspath
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
++--- edu.odu.cs.extract:extract-wordlists:4.2
 +--- org.junit.jupiter:junit-jupiter:5.8.2
 |    +--- org.junit:junit-bom:5.8.2
 |    |    +--- org.junit.jupiter:junit-jupiter:5.8.2 (c)
@@ -108,6 +273,61 @@ integrationTestPmdAuxClasspath
           \--- org.hamcrest:hamcrest:2.2
 
 integrationTestRuntimeClasspath - Runtime classpath of source set 'integration test'.
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
++--- edu.odu.cs.extract:extract-wordlists:4.2
 +--- org.junit.jupiter:junit-jupiter:5.8.2
 |    +--- org.junit:junit-bom:5.8.2
 |    |    +--- org.junit.jupiter:junit-jupiter:5.8.2 (c)
@@ -407,7 +627,61 @@ jbake
 \--- org.eclipse.jetty:jetty-server:9.4.36.v20210114 (*)
 
 mainPmdAuxClasspath
-No dependencies
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+\--- edu.odu.cs.extract:extract-wordlists:4.2
 
 mainSourceElements - List of source directories contained in the Main SourceSet. (n)
 No dependencies
@@ -433,7 +707,61 @@ pmdAux - The additional libraries that are available for type resolution during 
 No dependencies
 
 runtimeClasspath - Runtime classpath of source set 'main'.
-No dependencies
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+\--- edu.odu.cs.extract:extract-wordlists:4.2
 
 runtimeElements - Elements of runtime for main. (n)
 No dependencies
@@ -445,6 +773,61 @@ testAnnotationProcessor - Annotation processors and their dependencies for sourc
 No dependencies
 
 testCompileClasspath - Compile classpath for source set 'test'.
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
++--- edu.odu.cs.extract:extract-wordlists:4.2
 +--- org.junit.jupiter:junit-jupiter:5.8.2
 |    +--- org.junit:junit-bom:5.8.2
 |    |    +--- org.junit.jupiter:junit-jupiter:5.8.2 (c)
@@ -474,6 +857,61 @@ testImplementation - Implementation only dependencies for source set 'test'. (n)
 \--- org.hamcrest:hamcrest-library:2.2 (n)
 
 testPmdAuxClasspath
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
++--- edu.odu.cs.extract:extract-wordlists:4.2
 +--- org.junit.jupiter:junit-jupiter:5.8.2
 |    +--- org.junit:junit-bom:5.8.2
 |    |    +--- org.junit.jupiter:junit-jupiter:5.8.2 (c)
@@ -505,6 +943,61 @@ testResultsElementsForTest - Directory containing binary results of running test
 No dependencies
 
 testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- nz.ac.waikato.cms.weka:weka-stable:3.8.2
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:java-cup-11b-runtime:2015.03.26
+|    +--- nz.ac.waikato.cms.weka.thirdparty:bounce:0.18
+|    +--- com.googlecode.matrix-toolkits-java:mtj:1.0.4
+|    |    \--- com.github.fommil.netlib:all:1.1.2
+|    |         +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:core:1.1.2
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-win-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_ref-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_ref-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-osx-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1
+|    |         |    |    +--- com.github.fommil:jniloader:1.1
+|    |         |    |    +--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
+|    |         |    |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-i686:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-linux-armhf:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         +--- com.github.fommil.netlib:netlib-native_system-win-x86_64:1.1
+|    |         |    +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |         |    \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    |         \--- com.github.fommil.netlib:netlib-native_system-win-i686:1.1
+|    |              +--- com.github.fommil.netlib:native_system-java:1.1 (*)
+|    |              \--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    +--- net.sourceforge.f2j:arpack_combined_all:0.1
+|    \--- com.googlecode.netlib-java:netlib-java:1.1
+|         \--- com.github.fommil.netlib:core:1.1 -> 1.1.2 (*)
++--- edu.odu.cs.extract:extract-wordlists:4.2
 +--- org.junit.jupiter:junit-jupiter:5.8.2
 |    +--- org.junit:junit-bom:5.8.2
 |    |    +--- org.junit.jupiter:junit-jupiter:5.8.2 (c)

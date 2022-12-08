@@ -45,11 +45,6 @@ GitHub Pages tasks
 copyJBakePages
 updateGHPages - Copies everything into 'gh-pages' directory and push to report site
 
-Gradle Enterprise tasks
------------------------
-buildScanPublishPrevious - Publishes the data captured by the last build.
-provisionGradleEnterpriseAccessKey - Provisions a new access key for this build environment.
-
 Help tasks
 ----------
 buildEnvironment - Displays all buildscript dependencies declared in root project 'Main'.
@@ -65,7 +60,6 @@ tasks - Displays the tasks runnable from root project 'Main'.
 Reporting tasks
 ---------------
 projectReport - Generates a report about your project.
-reportStats - Collect summary statistics from analysis tools.
 
 Verification tasks
 ------------------
